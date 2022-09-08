@@ -1,7 +1,6 @@
 package FunctionalTesting;
 
 import static org.testng.Assert.assertTrue;
-//hey all 
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,7 +11,6 @@ import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-//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
 
 public class getRequestAutomation {
 
@@ -40,10 +38,10 @@ public class getRequestAutomation {
 				+ "    \"name\": \"morpheus\",\n"
 				+ "    \"job\": \"leader\"\n"
 				+ "}";
-		//String endPointString = "/api/users";
+		String endPointString = "/api/users";
 		ValidatableResponse postResponse = RestAssured.given().body(jsonString).
 				when()
-				.post()
+				.post(endPointString)
 				.then()
 				.log()
 				.all()
