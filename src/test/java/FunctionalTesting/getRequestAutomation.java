@@ -40,7 +40,7 @@ public class getRequestAutomation {
 				+ "    \"name\": \"morpheus\",\n"
 				+ "    \"job\": \"leader\"\n"
 				+ "}";
-		//String endPointString = "/api/users";
+		String endPointString = "/api/users";
 		ValidatableResponse postResponse = RestAssured.given().body(jsonString).
 				when()
 				.post()
@@ -48,6 +48,10 @@ public class getRequestAutomation {
 				.log()
 				.all()
 				.statusCode(201);
+		
 	}
-
+//how may i help you
+	
+	//hey how may i help you
+	
 }
