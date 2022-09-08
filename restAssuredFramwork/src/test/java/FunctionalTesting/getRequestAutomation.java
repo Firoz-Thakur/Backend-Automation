@@ -33,7 +33,7 @@ public class getRequestAutomation {
 				+ "}";
 		ValidatableResponse postResponse = RestAssured.given().body(jsonString).
 				when()
-				.post(endPointString)
+				.post()
 				.then()
 				.log()
 				.all()
