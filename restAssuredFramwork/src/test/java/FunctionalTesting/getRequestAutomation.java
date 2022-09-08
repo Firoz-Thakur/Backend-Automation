@@ -38,7 +38,7 @@ public class getRequestAutomation {
 				+ "    \"name\": \"morpheus\",\n"
 				+ "    \"job\": \"leader\"\n"
 				+ "}";
-		String endPointString = "/api/users";
+		//String endPointString = "/api/users"; 'this is of no use '
 		ValidatableResponse postResponse = RestAssured.given().body(jsonString).
 				when()
 				.post(endPointString)
