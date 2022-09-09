@@ -1,2 +1,0 @@
-# RestAssured
-RestAssured Framwork
